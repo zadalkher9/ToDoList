@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <title>To Do List</title>
+</head>
+<body>
+    <div style="direction: rtl;" class="main">
+
+        <div class="container">
+            <div class="tasksTable">
+                <div class="tHeader">
+                    <h1 id="taskTitle">مهامي</h1>
+                    <button class="addBtn circular"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div id="tasks">
+                    <div class="task">
+                        <div class="taskInfo">
+                            <h2>قراءة كتاب</h2>
+                            <div id="date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span>10/10/2030</span>
+                            </div>
+                        </div>
+                        <div class="taskAction">
+                            <button class="deleteBtn circular">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+
+                            <button class="completeBtn circular">
+                                <i class="fa-solid fa-check"></i>
+                            </button>
+
+                            <button class="incompleteBtn circular" >
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+
+                            <button class="updateBtn circular">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.tasksTable {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+.tHeader {
+    background-color: #17202A;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    position: relative;
+}
+
+.tHeader h1 {
+    color: white;
+    display: inline;
+}
+
+.circular {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.tHeader .addBtn {
+    background-color: #F06200;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.tHeader .addBtn i {
+    color: white;
+    font-size: 18px;
+}
+
+.task {
+    display: flex;
+    background-color: #17202a62;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    border-bottom: solid 1px #17202A;
+    transition: box-shadow 0.2s;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+.task:hover {
+    box-shadow: 0px 3px 15px rgba(97, 97, 97, 0.843);
+}
+
+#tasks {
+    padding: 20px;
+    background-color: #17202a22;
+}
+
+#tasks .taskInfo {
+    flex: 1;
+    min-width: 250px;
+}
+
+#tasks .taskAction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#tasks .taskAction .circular {
+    margin: 5px;
+}
+
+#tasks .taskAction .deleteBtn,
+#tasks .taskAction .completeBtn,
+#tasks .taskAction .incompleteBtn,
+#tasks .taskAction .updateBtn {
+    color: white;
+    background-color: #F06200;
+    font-size: 18px;
+}
+
+.done {
+    background-color: #f060006c;
+}
+
+/* استعلامات الوسائط لتحسين التخطيط على الشاشات الأصغر */
+@media (max-width: 600px) {
+    .tasksTable {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .task {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .taskInfo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 16px;
+        font-size: 26px;
+    }
+    
+    .taskAction {
+        margin: auto;
+        justify-content: center;
+        width: 80%;
+    }
+
+}
