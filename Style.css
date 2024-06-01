@@ -103,7 +103,7 @@
     background-color: #f060006c;
 }
 
-/* استعلامات الوسائط لتحسين التخطيط على الشاشات الأصغر */
+
 @media (max-width: 600px) {
     .tasksTable {
         width: 100%;
